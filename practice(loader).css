@@ -1,0 +1,91 @@
+.loader{
+    border: 16px solid #f3f3f3;
+    height:120px ;
+    width: 120px;
+    border-radius: 100%;
+    box-shadow: inset 3px 3px 10px rgba(218, 165, 32, 0.416);
+    border-top: 16px solid goldenrod;
+    display: flex;
+    flex-direction: row;
+    justify-self: 0 auto;
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes spin{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+@keyframes antispin{
+  0%{
+    transform: rotate(360deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+.circle{
+  margin-top: 50px;
+  height: 200px;
+  width: 200px;
+  border: 3px solid black ,1;
+  border-top: 3px solid rgb(246, 179, 179);
+  border-bottom: 3px solid rgb(255, 1, 1);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  animation-name: spin;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  background-color: black;
+  box-shadow: 5px 5px 30px;
+}
+.inner1{
+  align-self: center;
+  height: 180px;
+  width: 180px;
+  border: 2px solid black,1 ;
+  border-bottom: 2px solid blue;
+  border-top: 2px solid rgb(108, 108, 235);
+  border-radius:100px ;
+  display: flex;
+  justify-content: center;
+  animation-name: antispin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+.inner2{
+  align-self: center;
+  height: 160px;
+  width: 160px;
+  border: 2px solid black,1 ;
+  border-right: 2px solid rgb(41, 205, 41);
+  border-left: 2px solid rgba(24, 131, 24, 0.728);
+  border-radius:100px ;
+  display: flex;
+  justify-content: center;
+  animation-name: spin;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+.inner3{
+  align-self: center;
+  height: 140px;
+  width: 140px;
+  border: 2px solid black,1 ;
+  border-left: 2px solid rgb(255, 187, 99);
+  border-right: 2px solid rgba(124, 86, 36, 0.792);
+  border-radius:100px ;
+  animation-name: antispin;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}

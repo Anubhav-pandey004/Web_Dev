@@ -1,0 +1,142 @@
+.container{
+    margin: 0;
+    padding: 0;
+
+    background: linear-gradient(rgb(41, 10, 83)20%,rgb(53, 53, 123) 40%, rgba(2, 2, 128, 0.847),rgba(27, 27, 171, 0.9)70%,rgb(1, 1, 75)100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.happy{
+    font-family: 'Lobster', sans-serif;
+    opacity: 0;
+    font-size: 60px;
+    width: 100vh;
+    height:50px;
+    color: rgba(168, 0, 92, 0.922);
+    margin-left: 10vh;
+    line-height: 100px;
+    animation-name: up;
+    animation-duration: 4s;
+    animation-timing-function:linear;
+    animation-iteration-count: 1;
+    animation-delay: 10s;
+    animation-direction:alternate;
+    animation-play-state:running;
+}
+.numbers{
+    font-family: 'Lobster', sans-serif;
+    padding: 0%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   color: rgb(235, 77, 119);
+   font-size: 30px;
+   line-height: 0px;
+   font-weight: 700px;
+   margin-right: 196px;
+}
+#four{
+    position: absolute;
+    left: -500px;
+    animation-name: year;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+    animation-direction: normal;
+    animation-iteration-count:1;
+}
+@keyframes up{
+    0%{
+    opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    } 
+}
+.baloon{
+    position: absolute;
+    left:-500px;
+    /* left: 300px; */
+    top: 230px;
+    border: 2px yellow;
+    background-color: yellow;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    animation-name: new;
+    animation-duration: 7.9s;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+    animation-direction: normal;
+    animation-iteration-count:1;
+}
+#thread{
+    position: absolute;
+    top:40px;
+    left: 20px;
+    border: 1px solid white;
+    background-color: white;
+    height: 60px;
+    z-index: 0.1;
+}
+#three{
+   
+    position:absolute;
+    top:305px;
+    left:340px;
+    animation-name: up3;
+    animation-duration: 7.5s;
+    animation-timing-function: linear;
+    animation-delay: 7.74s;
+    animation-direction: normal;
+    animation-iteration-count:1;
+    z-index: 1;
+
+}
+@keyframes new {
+    0%{
+        left:600px;
+    }
+    40%{
+        left:500 ;
+    }
+    60%{
+       left:330px;
+       top:230px
+    }
+    100%{
+        top:-310px;
+        left:330px;
+    }
+}
+@keyframes year {
+    0%{
+        left:600px;
+    }
+    33.5%{
+        left:370px
+    }
+    40%{
+        left:370px
+    }
+    50%{
+        left:340px
+    }
+    100%{
+        left: 340px;
+    }
+    
+}
+@keyframes up3{
+    0%{
+        top:312px;
+        left:340px;
+    }
+
+    100%{
+        top:-969px
+    }
+}
